@@ -12,9 +12,9 @@ def matches():
 
             while line1 and line2:
                 if line1 != line2:
-                    return False
+                    return True
                 line1, line2 = file1.readline(), file2.readline()
-    return True
+    return False
 
 def aGenerator(aLimit):
     i = 0
